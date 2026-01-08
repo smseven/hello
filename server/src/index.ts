@@ -12,6 +12,7 @@ const io = new Server(server, {
     origin: '*',
     methods: ['GET', 'POST'],
   },
+  maxHttpBufferSize: 5 * 1024 * 1024, // 5MB
 });
 
 interface User {
@@ -52,7 +53,7 @@ io.on('connection', (socket: Socket) => {
     io.to(payload.callerID).emit('receiving returned signal', { signal: payload.signal, id: socket.id });
   });
 
-  socket.on('chat message', (payload: { roomId: string; message: string; from: string }) => {
+  socket.on('chat message', (payload: { roomId: string; message?: string; image?: string; type?: 'text' | 'image'; from: string }) => {
      io.to(payload.roomId).emit('chat message', payload);
   });
 

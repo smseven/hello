@@ -19,3 +19,11 @@ User disconnected: qlXZSWnSJKhw7VOVAAAB
 User connected: 9TtJR1wvLrgaEoPnAAAD
 User 9TtJR1wvLrgaEoPnAAAD joined room test-room-verify
 User disconnected: 9TtJR1wvLrgaEoPnAAAD
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+[32m[nodemon] restarting due to changes...[39m
+[32m[nodemon] starting `ts-node src/index.ts`[39m
+Server is running on port 5000
+User connected: BXxh9Zkq37QHTUp8AAAB
+User BXxh9Zkq37QHTUp8AAAB joined room test-room-file
+User disconnected: BXxh9Zkq37QHTUp8AAAB
